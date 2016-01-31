@@ -1,0 +1,119 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{awesome-cv}
+\usepackage[utf8]{inputenc}
+\usepackage[frenchb]{babel}
+
+% Configure page margins with geometry
+% \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Dany}{Deroy}
+\position{Bachelier en informatique et génie logiciel}              
+\address{82, rue René-Philippe, app.3, Le Moyne J4R 2J8}    
+\email{danyderoy@gmail.com}                      
+\mobile{514 839-1347}
+\homepage{www.danyderoy.info}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Ressources humaines}
+  {Logibec}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+% \lettertitle{Offre de service}
+% How the letter is opened
+\letteropening{Madame,\\Monsieur,}
+% How the letter is closed
+\letterclosing{J’espère que ma demande d’emploi retiendra votre attention et que vous voudrez bien m’accorder une entrevue. Vous pouvez communiquer avec moi pour fixer un rendez-vous.\\ \\
+Veuillez agréer, Madame, Monsieur, mes plus sincères salutations.}
+% Any enclosures with the letter
+\letterenclosure[p.j.]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {}
+  {www.danyderoy.info}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Présentation}
+Récemment diplômé en \emph{informatique et génie logiel} à l'Université du Québec à Montréal,
+
+\lettersection{Pourquoi Logibec?}
+
+
+\lettersection{Pourquoi moi?}
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
